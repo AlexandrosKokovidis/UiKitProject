@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891ECEAF2A71858900DE08EB /* FriendsRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891ECEAE2A71858900DE08EB /* FriendsRelation.swift */; };
+		891ECEB12A7185A300DE08EB /* UserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891ECEB02A7185A300DE08EB /* UserResult.swift */; };
+		891ECEB32A71864100DE08EB /* FollowingFollowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891ECEB22A71864100DE08EB /* FollowingFollowerViewController.swift */; };
+		891ECEB62A71871E00DE08EB /* SegmentedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891ECEB52A71871E00DE08EB /* SegmentedButtonView.swift */; };
+		891ECEB82A71877600DE08EB /* UserResultCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891ECEB72A71877600DE08EB /* UserResultCollectionView.swift */; };
 		892E6F7D2A6D955C0062BE98 /* FollowersTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E6F7C2A6D955C0062BE98 /* FollowersTabVC.swift */; };
 		892E6F7F2A6D95680062BE98 /* FollowingsTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E6F7E2A6D95680062BE98 /* FollowingsTabVC.swift */; };
 		892E6F812A6D98270062BE98 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E6F802A6D98270062BE98 /* TabVC.swift */; };
@@ -27,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		891ECEAE2A71858900DE08EB /* FriendsRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRelation.swift; sourceTree = "<group>"; };
+		891ECEB02A7185A300DE08EB /* UserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResult.swift; sourceTree = "<group>"; };
+		891ECEB22A71864100DE08EB /* FollowingFollowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingFollowerViewController.swift; sourceTree = "<group>"; };
+		891ECEB52A71871E00DE08EB /* SegmentedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonView.swift; sourceTree = "<group>"; };
+		891ECEB72A71877600DE08EB /* UserResultCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResultCollectionView.swift; sourceTree = "<group>"; };
 		892E6F7C2A6D955C0062BE98 /* FollowersTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersTabVC.swift; sourceTree = "<group>"; };
 		892E6F7E2A6D95680062BE98 /* FollowingsTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingsTabVC.swift; sourceTree = "<group>"; };
 		892E6F802A6D98270062BE98 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
@@ -59,15 +69,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		892E6F7B2A6D95450062BE98 /* TabBarControllers */ = {
+		891ECEAD2A71857400DE08EB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				891ECEAE2A71858900DE08EB /* FriendsRelation.swift */,
+				891ECEB02A7185A300DE08EB /* UserResult.swift */,
+				8970CE4C2A65374200EF6B98 /* Model.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		891ECEB42A7186B300DE08EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8970CE502A656B7900EF6B98 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		892E6F7B2A6D95450062BE98 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				892E6F7C2A6D955C0062BE98 /* FollowersTabVC.swift */,
 				892E6F7E2A6D95680062BE98 /* FollowingsTabVC.swift */,
 				892E6F802A6D98270062BE98 /* TabVC.swift */,
 				89A9EACD2A6EE6F10039C020 /* HomeVC.swift */,
+				891ECEB22A71864100DE08EB /* FollowingFollowerViewController.swift */,
+				89FD8DEF2A5B0CF40005A045 /* CollectionViewController.swift */,
 			);
-			path = TabBarControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		8970CE542A65814900EF6B98 /* UIStackViews */ = {
@@ -77,6 +107,8 @@
 				8970CE552A65816C00EF6B98 /* UserNameView.swift */,
 				8970CE572A6664A700EF6B98 /* ButtonView.swift */,
 				89A9EACB2A6EE53A0039C020 /* MenuBar.swift */,
+				8970CE4E2A65442700EF6B98 /* CustomButtonView.swift */,
+				891ECEB52A71871E00DE08EB /* SegmentedButtonView.swift */,
 			);
 			path = UIStackViews;
 			sourceTree = "<group>";
@@ -84,13 +116,12 @@
 		89FD8DCF2A5B0B610005A045 = {
 			isa = PBXGroup;
 			children = (
-				892E6F7B2A6D95450062BE98 /* TabBarControllers */,
+				891ECEB42A7186B300DE08EB /* Extensions */,
+				891ECEAD2A71857400DE08EB /* Domain */,
+				892E6F7B2A6D95450062BE98 /* Controllers */,
 				8970CE542A65814900EF6B98 /* UIStackViews */,
-				8970CE502A656B7900EF6B98 /* Extensions.swift */,
-				8970CE4E2A65442700EF6B98 /* CustomButtonView.swift */,
-				8970CE4C2A65374200EF6B98 /* Model.swift */,
 				89FD8DF12A5B192E0005A045 /* UIUserResultCollectionViewRow.swift */,
-				89FD8DEF2A5B0CF40005A045 /* CollectionViewController.swift */,
+				891ECEB72A71877600DE08EB /* UserResultCollectionView.swift */,
 				89FD8DDA2A5B0B610005A045 /* TestProject */,
 				89FD8DD92A5B0B610005A045 /* Products */,
 			);
@@ -188,18 +219,23 @@
 			files = (
 				8970CE562A65816C00EF6B98 /* UserNameView.swift in Sources */,
 				8970CE532A6580EF00EF6B98 /* UserAvatarView.swift in Sources */,
+				891ECEB82A71877600DE08EB /* UserResultCollectionView.swift in Sources */,
 				8970CE582A6664A700EF6B98 /* ButtonView.swift in Sources */,
 				8970CE4D2A65374200EF6B98 /* Model.swift in Sources */,
 				89FD8DDC2A5B0B610005A045 /* AppDelegate.swift in Sources */,
+				891ECEB62A71871E00DE08EB /* SegmentedButtonView.swift in Sources */,
 				89FD8DDE2A5B0B610005A045 /* SceneDelegate.swift in Sources */,
 				89A9EACE2A6EE6F10039C020 /* HomeVC.swift in Sources */,
 				8970CE4F2A65442700EF6B98 /* CustomButtonView.swift in Sources */,
 				892E6F7F2A6D95680062BE98 /* FollowingsTabVC.swift in Sources */,
+				891ECEAF2A71858900DE08EB /* FriendsRelation.swift in Sources */,
 				89FD8DF22A5B192E0005A045 /* UIUserResultCollectionViewRow.swift in Sources */,
 				89FD8DF02A5B0CF40005A045 /* CollectionViewController.swift in Sources */,
 				892E6F812A6D98270062BE98 /* TabVC.swift in Sources */,
 				892E6F7D2A6D955C0062BE98 /* FollowersTabVC.swift in Sources */,
 				89A9EACC2A6EE53A0039C020 /* MenuBar.swift in Sources */,
+				891ECEB12A7185A300DE08EB /* UserResult.swift in Sources */,
+				891ECEB32A71864100DE08EB /* FollowingFollowerViewController.swift in Sources */,
 				8970CE512A656B7900EF6B98 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

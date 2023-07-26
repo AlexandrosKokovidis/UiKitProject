@@ -20,8 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         // 3. Create a view hierarchy programmatically
+        
+        // MARK: Collection without tabs
 //        let viewController = CollectionViewController()
+        
+        // MARK: Custom Button for Tabs
+//        let viewController = FollowingFollowerViewController()
+        
+        // MARK: Default TabBar
         let viewController = TabVC()
+        
         let navigation = UINavigationController(rootViewController: viewController)
         
         // 4. Set the root view controller of the window with your view controller
